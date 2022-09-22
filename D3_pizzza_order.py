@@ -14,12 +14,22 @@ add_pepperoni = input("Do you want pepperoni? Y or N ")
 extra_cheese = input("Do you want extra cheese? Y or N ")
 # 🚨 Don't change the code above 👆
 
+size = size.capitalize()
+add_pepperoni = add_pepperoni.capitalize()
+extra_cheese = extra_cheese.capitalize()
+
 price = 0
 if size == 'S':
     price += 15
 if size == 'M':
     price += 20
+    if add_pepperoni == 'Y':
+        price += 2
 if size == 'L':
     price += 25
+    if add_pepperoni == 'Y':
+        price += 3
 
+if extra_cheese == 'Y':
+    price += 1
 print(f'Your order is ${price} in total.')
