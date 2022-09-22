@@ -24,3 +24,10 @@ e_count_2 = int(name.lower().count('e'))
 love_count = (l_count+o_count+v_count+e_count_2)
 
 true_love_count = true_count + love_count
+
+if 0 <= true_love_count <= 30:
+    print(f'Your sroce is {true_love_count}, you are okay')
+elif 30 < true_love_count <= 80:
+    print(f'Your score is {true_love_count}, you are good')
+else:
+    print(f'Your score is {true_love_count}, you are wonderful')
