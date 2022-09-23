@@ -1,5 +1,9 @@
 import random as rd
+from re import S
 
-head = rd.randint(0, 1)
-tail = rd.randint(0, 1)
-print(head)
+side = rd.randint(0, 1)
+
+if side == 0:
+    print("tails")
+else:
+    print("heads")
