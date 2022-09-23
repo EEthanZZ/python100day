@@ -1,6 +1,6 @@
-names_string = input("Give me everybody's names, separated by a comma. ")
-names = names_string.split(", ")
+import random
 
-name_list = []
-name_list.append(names)
-print(name_list)
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(",")
+
+print(names)
