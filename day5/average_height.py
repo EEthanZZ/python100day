@@ -13,5 +13,5 @@ high_score = input("input a list of student scores").split()
 highest = 0
 for i in high_score:
     if int(i) > int(highest):
-        highest == i
+        highest = i
 print(highest)
