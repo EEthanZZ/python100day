@@ -13,14 +13,15 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 # Eazy Level - Order not randomised:
 # e.g. 4 letter, 2 symbol, 2 number = JduE&!91
-# letter_pass = []
-# for i in range(0, nr_letters):
-#     letter_pass.append(random.choice(letters))
-# for i in range(0, nr_symbols):
-#     letter_pass.append(random.choice(symbols))
-# for i in range(0, nr_numbers):
-#     letter_pass.append(random.choice(numbers))
-# print(letter_pass)
+letter_pass = []
+for i in range(0, nr_letters):
+    letter_pass.append(random.choice(letters))
+for i in range(0, nr_symbols):
+    letter_pass.append(random.choice(symbols))
+for i in range(0, nr_numbers):
+    letter_pass.append(random.choice(numbers))
+shuffle_pass = random.sample(letter_pass, len(letter_pass))
+print(shuffle_pass)
 
 # Hard Level - Order of characters randomised:
 # e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
