@@ -26,6 +26,7 @@ while game:
     print(f"{row1}\n{row2}\n{row3}")
     if random_xy == position:
         print("you win")
+        map[list[0] - 1][list[1] - 1] = "Y "
         game == False
     else:
         print("try again")
