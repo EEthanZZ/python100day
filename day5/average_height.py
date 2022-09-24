@@ -7,3 +7,6 @@ print(stu_height)
 print(sum)
 ave = int(sum / len(stu_height))
 print(ave)
+
+
+high_score = input("input a list of student scores").split()
