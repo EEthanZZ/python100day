@@ -1,4 +1,5 @@
 
+from operator import truediv
 import random
 # create the word list and guess the letter from the selected word.
 word_list = ["apple", "banana", "orange"]
@@ -11,6 +12,7 @@ show = []
 for a in range(word_len):
     show += "_"
 
+a = 0
 game = True
 while game:
     guess_letter = input("guess the letter: ").lower()
@@ -18,7 +20,11 @@ while game:
         letter = select_word[x]
         if letter == guess_letter:
             show[x] = letter
+    a += 1
     print(show)
     if "_" not in show:
         game = False
         print("you win")
+    if a > 4:
+        game = False
+        print("lose")
