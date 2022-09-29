@@ -17,23 +17,24 @@ student_scores = {
 
 # 🚨 Don't change the code below
 student_grade = {}
-grade = ''
 
-for key in student_scores:
-    if 70 > student_scores[key] > 60:
-        grade = 'C'
-    elif 80 > student_scores[key] > 70:
-        grade = 'B'
-    elif 90 > student_scores[key] > 80:
-        grade = 'A'
-    elif 100 > student_scores[key] > 90:
-        grade = 'S'
+
+# method 2
+
+student_grade2 = {}
+for i in student_scores:
+    grade2 = student_scores[i]
+    if grade2 > 90:
+        student_grade2[i] = "S"
+        grade2 = student_scores[i]
+    elif grade2 > 80:
+        student_grade2[i] = "A"
+        grade2 = student_scores[i]
+    elif grade2 > 70:
+        student_grade2[i] = "B"
+        grade2 = student_scores[i]
+    elif grade2 > 60:
+        student_grade2[i] = "C"
     else:
-        grade = 'D'
-    student_grade[key] = grade
-# a = 0
-# for key in student_grade:
-#     key = student_scores[0]
-#     grade = student_scores[key]
-#     a += 1
-print(student_grade)
+        student_grade2[i] = "D"
+print(student_grade2)
