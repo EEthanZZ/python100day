@@ -22,3 +22,6 @@ quiz = QuizBrain(questionList=question_bank)
 
 while quiz.if_still_have_q():
     quiz.next_q()
+
+print("you'ce comleted the quiz")
+print(f"your total score is {quiz.score}/{quiz.question_number}")
