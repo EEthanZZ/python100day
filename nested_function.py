@@ -13,3 +13,12 @@ def multiply(a, b):
 def divide(a, b):
     return a / b
 
+
+def calculation(a, b, xxx):
+    return xxx(a, b)
+
+
+c = calculation(3, 4, addition)
+print(c)
+d = calculation(5, 6, multiply)
+print(d)
