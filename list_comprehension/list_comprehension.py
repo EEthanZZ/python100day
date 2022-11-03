@@ -27,3 +27,17 @@ square_num = [i * i for i in numbers]
 print(square_num)
 even_num = [i for i in numbers if i % 2 == 0]
 print(even_num)
+
+with open('/Users/ethan/Desktop/python100day/list_comprehension/file1.txt', mode="r") as file1:
+    a = file1.readlines()
+    new_a = [int(i.strip("\n")) for i in a]
+with open('/Users/ethan/Desktop/python100day/list_comprehension/file2.txt', mode="r") as file1:
+    b = file1.readlines()
+    new_b = [int(i.strip("\n")) for i in b]
+
+print(new_a)
+print(new_b)
+new_list = [i for i in new_a if i in new_b]
+print(new_list)
+
+
