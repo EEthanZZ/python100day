@@ -7,3 +7,7 @@ print(new_list)
 
 new_2 = [i + 1 for i in numbers]
 print(new_2)
+
+name = ["mike", "Joe"]
+new_name = [list(i) for i in name]
+print(new_name)
