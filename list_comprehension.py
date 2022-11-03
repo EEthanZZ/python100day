@@ -11,3 +11,7 @@ print(new_2)
 name = ["mike", "Joe"]
 new_name = [list(i) for i in name]
 print(new_name)
+
+range_1 = range(1,5)
+range_2 = [n*2 for n in range_1]
+print(range_2)
