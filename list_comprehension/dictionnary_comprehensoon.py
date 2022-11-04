@@ -11,10 +11,15 @@ student_id = {
 
 student = ["a", "b", "c", "d"]
 n = 1
-id = {i: n+student.index(i) for i in student}
+id = {i: n + student.index(i) for i in student}
 print(id)
 
-student_score = {i:random.randint(1, 100) for i in id}
+student_score = {i: random.randint(1, 100) for i in id}
 print(student_score)
-passed_score = {i: score for (i, score) in student_score.items() if score >30}
+passed_score = {i: score for (i, score) in student_score.items() if score > 30}
 print(passed_score)
+
+sentence = "How many charaters in this sentence"
+x = sentence.split(" ")
+sentence_cha = {i: len(i) for i in x}
+print(sentence_cha)
