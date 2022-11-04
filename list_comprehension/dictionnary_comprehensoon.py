@@ -23,3 +23,7 @@ sentence = "How many charaters in this sentence"
 x = sentence.split(" ")
 sentence_cha = {i: len(i) for i in x}
 print(sentence_cha)
+
+# double the charaters length
+d_sen_cha = {i: length*2 for i, length in sentence_cha.items()}
+print(d_sen_cha)
