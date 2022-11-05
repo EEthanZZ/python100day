@@ -12,7 +12,10 @@ my_label["text"] = "XXXXXX"
 
 
 def button_click():
-    my_label.config(text=input_text.get())
+    new_text = input_text.get()
+    my_label.config(text=new_text)
+    with open("file1.txt", mode="a") as file:
+        file.write(new_text)
 
 
 button = tkinter.Button(text="button", command=button_click)
@@ -20,6 +23,7 @@ button.pack()
 
 input_text = tkinter.Entry(width=40)
 input_text.pack()
+
 
 
 def add(*args):
