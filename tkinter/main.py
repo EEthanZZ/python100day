@@ -7,15 +7,15 @@ window.minsize(width=500, height=300)
 my_label = tkinter.Label(text="label 1", font=("Arial", 24, "bold"))
 my_label.pack(side="top")
 
-my_label.config(text="YYYYYY")
+
 my_label["text"] = "XXXXXX"
 
 
 def button_click():
-    pass
+    my_label.config(text="YYYYYY")
 
 
-button = tkinter.Button(text="button")
+button = tkinter.Button(text="button", command=button_click)
 button.pack()
 
 
