@@ -26,4 +26,14 @@ def cal(n, **kwargs):
 
 cal(n=3, add=2, mul=5)
 
+
+class Car:
+    def __init__(self, **kwargs):
+        self.model = kwargs["make"]
+        self.make = kwargs["model"]
+
+
+my_car = Car(make="Toyota", model="Rav4")
+print(my_car.model)
+
 window.mainloop()
