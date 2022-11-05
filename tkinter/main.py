@@ -12,12 +12,14 @@ my_label["text"] = "XXXXXX"
 
 
 def button_click():
-    my_label.config(text="YYYYYY")
+    my_label.config(text=input_text.get())
 
 
 button = tkinter.Button(text="button", command=button_click)
 button.pack()
 
+input_text = tkinter.Entry(width=40)
+input_text.pack()
 
 
 def add(*args):
