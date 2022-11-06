@@ -5,7 +5,7 @@ window.title("Window 1")
 window.minsize(width=500, height=300)
 
 my_label = tkinter.Label(text="label 1", font=("Arial", 24, "bold"))
-my_label.pack(side="top")
+my_label.grid(column=0, row=0)
 
 
 my_label["text"] = "XXXXXX"
@@ -15,14 +15,16 @@ def button_click():
     new_text = input_text.get()
     my_label.config(text=new_text)
     with open("file1.txt", mode="a") as file:
-        file.write(new_text)
+        file.write(f'{new_text}\n')
 
 
 button = tkinter.Button(text="button", command=button_click)
-button.pack()
+button.grid(column=1, row=1)
+button_2 = tkinter.Button(text="button2", command=button_click)
+button_2.grid(column=2, row=0)
 
-input_text = tkinter.Entry(width=40)
-input_text.pack()
+input_text = tkinter.Entry(width=20)
+input_text.grid(column=3, row=2)
 
 
 
