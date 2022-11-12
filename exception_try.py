@@ -4,5 +4,5 @@ try:
     print(diction["dassa"])
 except FileNotFoundError:
     open("afile.txt", mode="w")
-except KeyError:
-    print("the key does;t exist")
+except KeyError as error:
+    print(f"the key {error} does;t exist")
