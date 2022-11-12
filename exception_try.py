@@ -12,3 +12,4 @@ else:
     print(x)
 finally:
     file.close()
+    raise KeyError("my error")
