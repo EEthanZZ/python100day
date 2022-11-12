@@ -14,10 +14,27 @@
 #     file.close()
 #     raise KeyError("my error")
 
+#
+# height = float(input("Height:"))
+# weight = float(input("Weight:"))
+#
+# if height > 3:
+#     raise ValueError("not a true value")
+# bmi = height / weight ** 2
+#
 
-height = float(input("Height:"))
-weight = float(input("Weight:"))
+# practise 1
+fruits = ["Apple", "Pear", "Orange"]
 
-if height > 3:
-    raise ValueError("not a true value")
-bmi = height / weight ** 2
+
+def make_pie(index):
+    try:
+        fruit = fruits[index]
+    except IndexError as error:
+        print("fruit pie")
+    else:
+        print(fruit + " pie")
+
+
+make_pie(2)
+make_pie(4)
