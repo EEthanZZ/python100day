@@ -56,6 +56,4 @@ for post in facebook_posts:
     except KeyError as error:
         total_likes += 0
 
-
-
 print(total_likes)
